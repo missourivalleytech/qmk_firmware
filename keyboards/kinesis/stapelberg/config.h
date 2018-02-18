@@ -9,7 +9,7 @@
 
 /* key matrix size */
 #define MATRIX_ROWS 15
-#define MATRIX_COLS  7 
+#define MATRIX_COLS  7
 
 /*
  * Keyboard Matrix Assignments
@@ -27,12 +27,12 @@
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
- 
+
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCING_DELAY 5
 
-/* don't know if this should be defined at the board or top level. Assuming board 
+/* don't know if this should be defined at the board or top level. Assuming board
 #define MOUSEKEY_DELAY          100
 #define MOUSEKEY_INTERVAL       20
 #define MOUSEKEY_MAX_SPEED      3
@@ -40,6 +40,12 @@
 */
 
 #define IGNORE_MOD_TAP_INTERRUPT
+
+/* ws2812 RGB LED */
+#define RGB_DI_PIN A3
+#define RGBLED_NUM 40
+#define RGBLIGHT_ANIMATIONS
+
 
 /* key combination for magic key command */
 #define IS_COMMAND() ( \
